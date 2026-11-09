@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Georges Akkaoui | Commercial Real Estate Advisor, Dubai</title>
+<meta name="description" content="Georges Akkaoui, Commercial Expert & Investment Advisor at fäm Properties. Buying, selling, leasing and letting offices in Dubai, Golden Visa advisory, and market research.">
+<meta property="og:title" content="Georges Akkaoui | Commercial Real Estate Advisor, Dubai">
+<meta property="og:image" content="assets/headshot-round.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Kufi+Arabic:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1b2d; --ink-2:#1b2a40; --sand:#f6f1e8; --paper:#fffdf9;
+  --gold:#b08a4e; --gold-2:#d9bf8c; --text:#1f2733; --muted:#5d6675; --line:#e6ddcc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;color:var(--ink)}
+h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:.4em}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:600;color:var(--gold);margin-bottom:.8em}
+.lede{color:var(--muted);max-width:640px}
+section{padding:96px 0}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(15,27,45,.96);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.35rem;color:#fff;text-decoration:none;font-weight:600}
+.brand span{color:var(--gold-2)}
+.links{display:flex;gap:28px;list-style:none}
+.links a{color:#d6dbe3;text-decoration:none;font-size:.9rem}
+.links a:hover{color:var(--gold-2)}
+@media(max-width:820px){.links{display:none}}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--ink) 0%,var(--ink-2) 100%);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:30px;align-items:end}
+.hero-text{padding:100px 0 110px}
+.hero h1{color:#fff;font-size:clamp(2.5rem,5.4vw,4.2rem)}
+.hero h1 em{color:var(--gold-2);font-style:normal}
+.hero p{color:#c9d0da;max-width:560px;margin:22px 0 34px;font-size:1.1rem}
+.ar{font-family:"Noto Kufi Arabic",sans-serif;color:var(--gold-2);font-size:1rem;margin-top:18px;text-align:left}
+.hero-photo{position:relative;align-self:end;display:flex;justify-content:center}
+.hero-photo::before{content:"";position:absolute;bottom:40px;left:50%;transform:translateX(-50%);width:88%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(217,191,140,.22),rgba(217,191,140,0) 70%);border:1px solid rgba(217,191,140,.35)}
+.hero-photo img{position:relative;width:100%;max-width:420px;max-height:600px;object-fit:contain;object-position:bottom}
+.hero-badge{position:absolute;left:0;bottom:60px;background:#fff;color:var(--ink);padding:12px 16px;font-size:.82rem;box-shadow:0 12px 30px rgba(0,0,0,.25);border-left:3px solid var(--gold)}
+.hero-badge b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.15rem}
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-text{padding:70px 0 10px}
+  .hero-photo img{max-width:300px}
+  .hero-badge{left:6%;bottom:30px}
+}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:2px;text-decoration:none;font-weight:600;font-size:.95rem;transition:.2s;cursor:pointer;border:0;font-family:inherit}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#9a7741}
+.btn-line{border:1px solid rgba(255,255,255,.4);color:#fff;background:none}
+.btn-line:hover{border-color:var(--gold-2);color:var(--gold-2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;max-width:560px}
+.stats b{display:block;font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--gold-2);line-height:1}
+.stats span{font-size:.85rem;color:#aab3c0}
+
+/* About */
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:64px;align-items:start}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:36px}}
+.about-text p{margin-bottom:1.1em}
+.about-text p.big{font-family:"Cormorant Garamond",serif;font-size:1.55rem;line-height:1.4;color:var(--ink)}
+.facts{background:var(--sand);padding:34px 30px;border-top:2px solid var(--gold);position:sticky;top:96px}
+.fact{padding:14px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact small{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:var(--gold);font-weight:600}
+.fact span{font-size:.98rem;color:var(--ink)}
+
+/* Services */
+.services{background:var(--sand)}
+.group-title{font-size:1.5rem;margin:48px 0 22px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:#fff;padding:28px 26px;border-top:2px solid var(--gold);transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,27,45,.08)}
+.card h3{font-size:1.35rem;margin-bottom:8px}
+.card p{font-size:.93rem;color:var(--muted)}
+.card ul{margin-top:10px;padding-left:18px;font-size:.9rem;color:var(--muted)}
+.card li{margin-bottom:4px}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px}
+
+/* Publications */
+.pub-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:.85rem;padding:8px 16px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px}
+.pub{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.2s;cursor:pointer;text-align:left;font:inherit;padding:0}
+.pub:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(15,27,45,.1)}
+.pub .thumb{aspect-ratio:4/5;overflow:hidden;background:var(--sand);position:relative}
+.pub .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:.4s}
+.pub:hover .thumb img{transform:scale(1.03)}
+.pub .kind{position:absolute;top:12px;left:12px;background:var(--gold);color:#fff;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 10px}
+.pub .body{padding:18px 20px 22px}
+.pub .date{font-size:.78rem;color:var(--muted)}
+.pub h3{font-size:1.25rem;margin:4px 0 6px}
+.pub p{font-size:.88rem;color:var(--muted)}
+.pub .go{margin-top:10px;font-size:.82rem;font-weight:600;color:var(--gold)}
+.lightbox{position:fixed;inset:0;background:rgba(10,19,32,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-height:90vh;max-width:min(92vw,720px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.lightbox button{position:absolute;top:16px;right:20px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+
+/* Insights */
+.insights{background:var(--sand)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:44px 0}
+.kpi{background:#fff;padding:30px 26px}
+.kpi b{display:block;font-family:"Cormorant Garamond",serif;font-size:2.7rem;color:var(--ink);line-height:1}
+.kpi .lbl{font-weight:600;font-size:.92rem;margin:10px 0 6px}
+.kpi .src{font-size:.78rem;color:var(--muted)}
+.takeaways{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.take h3{font-size:1.3rem;margin-bottom:6px}
+.take p{color:var(--muted);font-size:.95rem}
+.sources{margin-top:40px;font-size:.8rem;color:var(--muted)}
+.sources a{color:var(--gold)}
+
+/* Contact */
+.contact{background:var(--ink);color:#fff}
+.contact h2{color:#fff}
+.contact .lede{color:#aab3c0}
+.card-c{display:grid;grid-template-columns:200px 1fr 200px;gap:44px;align-items:center;margin-top:48px;background:var(--ink-2);padding:40px;border:1px solid rgba(217,191,140,.25)}
+@media(max-width:860px){.card-c{grid-template-columns:1fr;text-align:center;justify-items:center;padding:30px 20px}}
+.head{width:200px;height:200px;border-radius:50%;overflow:hidden;border:3px solid var(--gold);background:var(--sand)}
+.head img{width:100%;height:100%;object-fit:cover}
+.who h3{color:#fff;font-size:2rem}
+.who .title{color:var(--gold-2);font-size:.95rem;margin:4px 0 20px}
+.line{display:flex;gap:12px;align-items:center;margin:12px 0;color:#dde2ea;flex-wrap:wrap}
+@media(max-width:860px){.line{justify-content:center}}
+.line svg{width:20px;height:20px;flex:none;fill:var(--gold-2)}
+.line a{text-decoration:none}
+.line a:hover{color:var(--gold-2)}
+.line .num{font-size:1.15rem;font-weight:600;color:#fff}
+.pill{font-size:.78rem;border:1px solid rgba(217,191,140,.5);color:var(--gold-2);padding:3px 10px;border-radius:20px}
+.qr{background:#fff;padding:14px;text-align:center}
+.qr img,.qr canvas{width:172px!important;height:172px!important;margin:0 auto}
+.qr small{display:block;color:var(--ink);font-size:.75rem;margin-top:8px;font-weight:600}
+footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:26px 0;text-align:center}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:30}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand">Georges <span>Akkaoui</span></a>
+    <ul class="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#insights">Market Insights</a></li>
+      <li><a href="#contact">Let's Talk</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-text">
+      <div class="eyebrow">Commercial Real Estate · Dubai · fäm Properties</div>
+      <h1>Complex decisions, made with <em>confidence</em>.</h1>
+      <p>Offices and commercial property to buy, sell, lease or let, backed by 25 years of reading Gulf markets through data, and advice on what's truly right for you.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="https://wa.me/971504252209" target="_blank" rel="noopener">WhatsApp me</a>
+        <a class="btn btn-line" href="#publications">Read my research</a>
+      </div>
+      <div class="ar" dir="rtl" lang="ar">الثقة أولاً، والعلاقة قبل الصفقة</div>
+      <div class="stats">
+        <div><b>25</b><span>years across the Gulf</span></div>
+        <div><b>3</b><span>languages: EN · AR · FR</span></div>
+        <div><b>1</b><span>advisor, end to end</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/headshot.webp" alt="Georges Akkaoui" width="900" height="1350">
+      <div class="hero-badge"><b>Georges Akkaoui</b>Your Commercial Expert &amp; Investment Advisor</div>
+    </div>
+  </div>
+</header>
+
+<!-- 1. ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-text">
+      <div class="eyebrow">About me</div>
+      <h2>Data-driven. Relationship-led.</h2>
+      <p class="big">For 25 years, my work has been about one thing: helping businesses in the Gulf make complex decisions with confidence.</p>
+      <p>I built my career in B2B technology, data and insights across the UAE, Saudi Arabia and the lower Gulf. Here, I learned to read markets through numbers and to navigate deals where boards, partners, family offices and government stakeholders all have a seat at the table.</p>
+      <p>That is exactly what commercial real estate demands. Whether you're buying, selling, leasing or letting, I bring a data-driven view of value, a negotiator's patience, and a talent for aligning many voices behind one outcome.</p>
+      <p>I'm Lebanese by birth and heritage, a long-time Gulf expat, and fluent in English, Arabic and French. I'm at home across cultures, but my roots are firmly planted in Dubai and the Khaleeji way of doing business, where trust is earned and relationships come first.</p>
+      <p>As a father of two daughters, I think about property the way families and founders do: as a long-term foundation, not a quick transaction. Today I put that experience to work for investors and businesses looking for the right commercial space or a reliable passive income stream in Dubai. I'm the advisor who tells you what the data says and what's truly right for you.</p>
+    </div>
+    <aside class="facts">
+      <div class="fact"><small>Focus</small><span>Offices &amp; commercial property, Dubai</span></div>
+      <div class="fact"><small>Background</small><span>25 years in B2B technology, data &amp; insights</span></div>
+      <div class="fact"><small>Markets</small><span>UAE · Saudi Arabia · Lower Gulf</span></div>
+      <div class="fact"><small>Languages</small><span>English · العربية · Français</span></div>
+      <div class="fact"><small>Brokerage</small><span>fäm Properties</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- 2. SERVICES -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="eyebrow">My services</div>
+    <h2>One advisor. Every step of the deal.</h2>
+    <p class="lede">From finding the right space to securing your residency, delivered with the full backing of fäm Properties.</p>
+
+    <h3 class="group-title">Commercial property</h3>
+    <div class="grid">
+      <div class="card"><span class="tag">Investors</span><h3>Buying</h3><p>Offices, retail and commercial units, ready or off-plan, screened on price per sq ft, yield, service charges and tenant demand.</p></div>
+      <div class="card"><span class="tag">Owners</span><h3>Selling</h3><p>Evidence-based pricing from recent transactions, targeted marketing to qualified buyers, and negotiation through to transfer.</p></div>
+      <div class="card"><span class="tag">Businesses</span><h3>Leasing</h3><p>The right office for your team and budget: shortlisting, viewings, lease terms, fit-out periods and free-zone or mainland fit.</p></div>
+      <div class="card"><span class="tag">Landlords</span><h3>Letting</h3><p>Rent priced to let quickly, vetted tenants, cheque structures and renewals that protect your income.</p></div>
+    </div>
+
+    <h3 class="group-title">Residency &amp; citizenship</h3>
+    <div class="grid">
+      <div class="card"><span class="tag">10 years</span><h3>Golden Visa: property investor</h3><p>Own UAE property worth AED 2M or more, alone or combined. Mortgaged and qualifying off-plan property can count.</p>
+        <ul><li>Sponsor spouse, children and parents</li><li>Valuation route if your property has grown past AED 2M</li><li>Visa moved to a new asset if you sell and reinvest</li></ul></div>
+      <div class="card"><span class="tag">2 years</span><h3>Property investor visa</h3><p>A renewable residency route for investors with property from AED 750,000.</p></div>
+      <div class="card"><span class="tag">5 years</span><h3>Retirement visa</h3><p>Renewable residency for retirees aged 55 and over who invest in UAE property.</p></div>
+      <div class="card"><span class="tag">Global</span><h3>Citizenship by Investment</h3><p>Guidance on second-citizenship programmes through investment, coordinated with trusted, licensed partners.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PUBLICATIONS -->
+<section id="publications">
+  <div class="wrap">
+    <div class="pub-head">
+      <div>
+        <div class="eyebrow">Publications</div>
+        <h2>Research, infographics &amp; articles</h2>
+        <p class="lede">Building-level data and market views I publish for owners, tenants and investors, drawn from DLD-registered transactions.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="on" data-f="all">All</button>
+        <button data-f="Infographic">Infographics</button>
+        <button data-f="Property profile">Property profiles</button>
+        <button data-f="Article">Articles</button>
+      </div>
+    </div>
+    <div class="pubs" id="pubs"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button aria-label="Close">&times;</button>
+  <img alt="">
+</div>
+
+<!-- 4. MARKET INSIGHTS -->
+<section id="insights" class="insights">
+  <div class="wrap">
+    <div class="eyebrow">Market insights · Dubai office market, Q3 2026</div>
+    <h2>What the data says right now</h2>
+    <p class="lede">After five years of rapid growth, Dubai's office market is stabilising: rents are holding at high levels, Grade A space is still scarce, and new supply is finally arriving.</p>
+
+    <div class="kpis">
+      <div class="kpi"><b>AED 241</b><div class="lbl">Average office rent per sq ft</div><div class="src">Stable in Q3 2026 · Savills</div></div>
+      <div class="kpi"><b>~94%</b><div class="lbl">Office occupancy</div><div class="src">Q2 2026 · CBRE</div></div>
+      <div class="kpi"><b>+16%</b><div class="lbl">Prime office rent growth, YoY</div><div class="src">Q2 2026 · CBRE</div></div>
+      <div class="kpi"><b>1.13M</b><div class="lbl">Sq ft of new offices due by end-2026</div><div class="src">Cushman &amp; Wakefield</div></div>
+    </div>
+
+    <div class="takeaways">
+      <div class="take"><h3>For tenants</h3><p>Rents have plateaued and some secondary space is returning to the market, so there is more room to negotiate on terms, rent-free periods and fit-out than a year ago. Prime Grade A space remains tight; plan early.</p></div>
+      <div class="take"><h3>For landlords</h3><p>Demand is led by smaller units. Well-fitted, competitively priced offices let fastest, while overpriced space now sits longer as occupiers take more time to decide.</p></div>
+      <div class="take"><h3>For investors</h3><p>Occupancy and rents remain at historically high levels, and limited new supply until 2028 supports income. Buy on yield and location, not on last year's growth rate.</p></div>
+    </div>
+
+    <p class="sources">Sources: <a href="https://www.savills.co.uk/research_articles/229130/395566-0" target="_blank" rel="noopener">Savills Dubai Office Market Q3 2026</a> · <a href="https://www.arabnews.com/node/2652556/amp" target="_blank" rel="noopener">CBRE UAE Market Review Q2 2026 (via Arab News)</a> · <a href="https://uae.cushwake.ae/en/insights/marketbeats/jx75pd3mw62aqw033htqey1c7h8bbp1z" target="_blank" rel="noopener">Cushman &amp; Wakefield MarketBeat Q2 2026</a>. Figures vary by firm and methodology. Updated November 2026.</p>
+  </div>
+</section>
+
+<!-- 5. LET'S TALK -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Let's talk</div>
+    <h2>Start with a conversation, not a sales pitch.</h2>
+    <p class="lede">Tell me what you're looking for, whether that's space for your business, an asset to sell, or income for your family, and I'll tell you what the data says.</p>
+
+    <div class="card-c">
+      <div class="head"><img src="assets/headshot-round.jpg" alt="Georges Akkaoui"></div>
+      <div class="who">
+        <h3>Georges Akkaoui</h3>
+        <div class="title">Your Commercial Expert &amp; Investment Advisor · fäm Properties</div>
+        <div class="line">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <a class="num" href="tel:+971504252209">+971 50 425 2209</a>
+          <a class="pill" href="tel:+971504252209">Call</a>
+          <a class="pill" href="https://wa.me/971504252209" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.5L4 7.3V17h16V7.3z"/></svg>
+          <a href="mailto:georges.a@famproperties.com">georges.a@famproperties.com</a>
+        </div>
+      </div>
+      <div class="qr">
+        <div id="qr"></div>
+        <small>Scan to WhatsApp me</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Georges Akkaoui · fäm Properties, Dubai, UAE</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/971504252209" target="_blank" rel="noopener" aria-label="WhatsApp Georges"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* =====================================================================
+   PUBLICATIONS — to add a new one:
+   1. Upload the image (and PDF, if any) into the "assets" folder on GitHub.
+   2. Copy one line below, paste it at the TOP of the list, and edit it.
+      type:  "Infographic", "Property profile" or "Article"
+      image: the picture shown on the card
+      file:  (optional) a PDF or link that opens when clicked.
+             Leave it out and clicking shows the image full-screen.
+   ===================================================================== */
+var PUBLICATIONS = [
+  {type:"Article", date:"3 Nov 2026", title:"Why the Next Six Months Favour Selective Buyers of Off-Plan Offices and Shops in Dubai", summary:"Buyers have time to choose again. Five arguments for buying selectively now, and which units to walk away from before the 2028 supply wave.", image:"assets/offplan-article-cover.jpg", file:"assets/offplan-offices-shops-next-six-months.pdf"},
+  {type:"Property profile", date:"Nov 2026", title:"One Lake Plaza, JLT", summary:"Freehold offices and ground-floor retail in Cluster T: building facts, market performance and availability for sale and lease.", image:"assets/one-lake-plaza-cover.jpg", file:"assets/one-lake-plaza.pdf"},
+  {type:"Infographic", date:"Oct 2026", title:"Fortune Executive Tower: office prices hit a new high", summary:"Median resale price of AED 1,597/sq ft in 2026, up 32% on 2025, with the latest registered transactions.", image:"assets/fortune-sales.jpg"},
+  {type:"Infographic", date:"Jul–Oct 2026", title:"Fortune Executive Tower: what the latest leases say", summary:"50+ leases in about 100 days at a median AED 97/sq ft, and why renewals now price at new-lease levels.", image:"assets/fortune-rentals.jpg"}
+];
+
+(function(){
+  var grid=document.getElementById('pubs'), lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function render(f){
+    grid.innerHTML='';
+    PUBLICATIONS.filter(function(p){return f==='all'||p.type===f;}).forEach(function(p){
+      var el=document.createElement(p.file?'a':'button');
+      el.className='pub';
+      if(p.file){el.href=p.file;el.target='_blank';el.rel='noopener';}
+      else{el.type='button';el.onclick=function(){lbImg.src=p.image;lbImg.alt=p.title;lb.classList.add('open');};}
+      el.innerHTML='<div class="thumb"><img loading="lazy" src="'+esc(p.image)+'" alt="'+esc(p.title)+'"><span class="kind">'+esc(p.type)+'</span></div>'+
+        '<div class="body"><div class="date">'+esc(p.date)+'</div><h3>'+esc(p.title)+'</h3><p>'+esc(p.summary)+'</p>'+
+        '<div class="go">'+(p.file?'Open PDF →':'View full size →')+'</div></div>';
+      grid.appendChild(el);
+    });
+  }
+  render('all');
+  document.getElementById('filters').addEventListener('click',function(e){
+    if(e.target.tagName!=='BUTTON')return;
+    this.querySelectorAll('button').forEach(function(b){b.classList.remove('on');});
+    e.target.classList.add('on'); render(e.target.dataset.f);
+  });
+  function close(){lb.classList.remove('open');}
+  lb.addEventListener('click',function(e){if(e.target!==lbImg)close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* QR code: uses assets/qr-code.png if you add one, otherwise generates a WhatsApp QR. */
+(function(){
+  var box=document.getElementById('qr'), img=new Image();
+  img.alt='QR code to contact Georges Akkaoui';
+  img.onload=function(){box.appendChild(img);};
+  img.onerror=function(){
+    try{new QRCode(box,{text:'https://wa.me/971504252209',width:172,height:172,colorDark:'#0f1b2d',colorLight:'#ffffff'});}
+    catch(e){box.innerHTML='<a href="https://wa.me/971504252209">wa.me/971504252209</a>';}
+  };
+  img.src='assets/qr-code.png';
+})();
+</script>
+</body>
+</html>
