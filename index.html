@@ -173,7 +173,7 @@ footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:26px 0;text-alig
       <li><a href="#fam">fäm Properties</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#insights">Market Insights</a></li>
-      <lil></lil><a href="#join-us">Join us</a></li>
+      <lil><a href="#join-us">Join us</a></li>
       <li><a href="#contact">Let's Talk</a></li>
     </ul>
   </div>
@@ -323,15 +323,26 @@ footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:26px 0;text-alig
   </div>
 </section>
 
-  <!-- ===== JOIN US ===== -->
+<!-- ===== JOIN US ===== -->
 <section id="join-us" class="joinus">
   <style>
     .joinus{padding:100px 24px;border-top:1px solid rgba(255,255,255,.1)}
     .joinus .in{max-width:1000px;margin:0 auto}
     .joinus .head{text-align:center;max-width:720px;margin:0 auto 56px}
+    .joinus .logo-circle{width:120px;height:120px;margin:0 auto 28px;border-radius:50%;
+      border:1px solid #c8a96a;background:#fff;display:grid;place-items:center;overflow:hidden;
+      box-shadow:0 0 0 8px rgba(200,169,106,.12)}
+    .joinus .logo-circle img{width:78%;height:auto;object-fit:contain}
+    .joinus .logo-circle span{font-size:34px;font-weight:600;color:#c8a96a;letter-spacing:.02em}
     .joinus .tag{font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.6}
     .joinus h2{font-size:clamp(32px,5vw,52px);font-weight:300;margin:16px 0 20px;line-height:1.1}
     .joinus h2 em{color:#c8a96a}
+    .joinus .motto{display:inline-block;margin:0 0 26px;padding:18px 30px;
+      border-top:1px solid #c8a96a;border-bottom:1px solid #c8a96a}
+    .joinus .motto strong{display:block;font-size:clamp(24px,3.4vw,34px);font-weight:300;letter-spacing:.02em}
+    .joinus .motto strong em{color:#c8a96a}
+    .joinus .motto span{display:block;margin-top:6px;font-size:12px;letter-spacing:.2em;
+      text-transform:uppercase;opacity:.7}
     .joinus .head p{opacity:.75;font-size:18px;line-height:1.6}
     .joinus .cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:48px}
     .joinus .card{border:1px solid rgba(255,255,255,.12);padding:32px}
@@ -342,15 +353,25 @@ footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:26px 0;text-alig
     .joinus li:first-child{border-top:0}
     .joinus li b{color:#c8a96a;font-weight:500}
     .joinus .cta{text-align:center}
-    .joinus .cta a{display:inline-block;padding:15px 28px;border:1px solid #c8a96a;color:#c8a96a;
+    .joinus .cta a.btn{display:inline-block;padding:15px 28px;border:1px solid #c8a96a;color:#c8a96a;
       text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
-    .joinus .cta a:hover{background:#c8a96a;color:#111}
+    .joinus .cta a.btn:hover{background:#c8a96a;color:#111}
+    .joinus .cta p{margin-top:16px;font-size:14px;opacity:.7}
+    .joinus .cta p a{color:#c8a96a;text-decoration:none}
     @media (max-width:760px){.joinus .cols{grid-template-columns:1fr}}
   </style>
   <div class="in">
     <div class="head">
+      <div class="logo-circle">
+        <img src="assets/fam-logo.png" alt="fäm Properties"
+             onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'fäm'}))">
+      </div>
       <div class="tag">Careers</div>
       <h2>Join us at <em>fäm Properties</em>.</h2>
+      <div class="motto">
+        <strong>We make <em>Millionaires</em></strong>
+        <span>Our top brokers bill over $3m USD a year</span>
+      </div>
       <p>We're growing our team in Dubai. If you're driven and love building relationships,
          you'll have one of the city's largest brokerages behind you, with real support
          to grow your career and your earnings.</p>
@@ -377,10 +398,11 @@ footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:26px 0;text-alig
     </div>
 
     <div class="cta">
-      <a href="mailto:YOUR-EMAIL?subject=Joining%20f%C3%A4m%20Properties">Register your interest →</a>
+      <a class="btn" href="mailto:georges.a@famproperties.com?subject=Joining%20f%C3%A4m%20Properties">Register your interest →</a>
+      <p>or email <a href="mailto:georges.a@famproperties.com">georges.a@famproperties.com</a></p>
     </div>
   </div>
-</section>
+</section>  
   
 <!-- 6. LET'S TALK -->
 <section id="contact" class="contact">
