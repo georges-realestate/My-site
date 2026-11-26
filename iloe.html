@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subscribe to ILOE | Georges Akkaoui, fäm Properties</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1b2d; --ink-2:#1b2a40; --sand:#f6f1e8; --paper:#fffdf9;
+  --gold:#b08a4e; --gold-2:#d9bf8c; --text:#1f2733; --muted:#5d6675; --line:#e6ddcc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--sand);line-height:1.65;font-size:17px;min-height:100vh;display:flex;flex-direction:column}
+h1,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;color:var(--ink)}
+.iloe-form h1{font-size:2rem;margin-bottom:6px}
+nav{background:var(--ink)}
+nav .wrap{max-width:1120px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.35rem;color:#fff;text-decoration:none;font-weight:600}
+.brand span{color:var(--gold-2)}
+.back{color:#d6dbe3;font-size:.85rem;text-decoration:none}
+.back:hover{color:var(--gold-2)}
+main{flex:1;padding:48px 20px 64px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:2px;text-decoration:none;font-weight:600;font-size:.95rem;transition:.2s;cursor:pointer;border:0;font-family:inherit}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#9a7741}
+.ju-mail{color:var(--muted)}
+.ju-mail a{color:var(--gold);font-weight:600;text-decoration:none}
+.ju-mail a:hover{text-decoration:underline}
+footer{background:#0a1320;color:#7d8796;font-size:.8rem;padding:20px;text-align:center}
+.iloe-form{box-sizing:border-box;width:100%;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);padding:36px;scroll-margin-top:100px}
+.iloe-form h3{margin-bottom:6px}
+.iloe-intro{color:var(--muted);font-size:.93rem;margin-bottom:24px}
+.iloe-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.iloe-fields label{min-width:0;display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600;color:var(--text)}
+.iloe-fields .full{grid-column:1/-1}
+.iloe-fields input,.iloe-fields select{box-sizing:border-box;width:100%;max-width:100%;font:inherit;font-weight:400;font-size:.93rem;padding:11px 12px;border:1px solid var(--line);border-radius:2px;background:#fff;color:var(--text)}
+.iloe-fields input:focus,.iloe-fields select:focus{outline:none;border-color:var(--gold)}
+.iloe-fields small{font-weight:400;font-size:.78rem;color:var(--muted)}
+.iloe-fields .consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:var(--muted)}
+.iloe-fields .consent input{width:auto;flex:none;margin-top:3px;accent-color:var(--gold)}
+.iloe-form .invalid{border-color:#c0392b}
+.iloe-error{color:#c0392b;font-size:.88rem;margin-top:16px}
+.iloe-form button{margin-top:22px}
+.iloe-form .ju-mail{text-align:left;font-size:.85rem;margin-top:14px}
+@media(max-width:700px){.iloe-fields{grid-template-columns:1fr}.iloe-form{padding:24px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">Georges <span>Akkaoui</span></a>
+    <a href="index.html#services" class="back">← Back to website</a>
+  </div>
+</nav>
+<main>
+    <form id="iloe-form" class="iloe-form" novalidate>
+      <h1>Subscribe to ILOE</h1>
+      <p class="iloe-intro">Fill in your details and I'll handle your subscription with ILOE (Dubai Insurance), the official provider.</p>
+      <div class="iloe-fields">
+        <label class="full">Full name (as on Emirates ID)
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Emirates ID or Unified Identity (UID) number
+          <input type="text" name="eid" inputmode="numeric" placeholder="784-XXXX-XXXXXXX-X or UID" required>
+        </label>
+        <label>Date of birth
+          <input type="date" name="dob" required>
+        </label>
+        <label>Mobile number linked to your Emirates ID
+          <input type="tel" name="mobile" autocomplete="tel" placeholder="+971 5X XXX XXXX" pattern="^(\+971|00971|0)?\s?5\d([\s-]?\d){7}$" required>
+          <small>You'll receive an OTP on this number to confirm the subscription.</small>
+        </label>
+        <label>Sector / employment category
+          <select name="sector" required>
+            <option value="">Select…</option>
+            <option>Private sector</option>
+            <option>Federal government</option>
+            <option>Free zone company</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="full">Basic monthly salary
+          <select name="category" required>
+            <option value="">Select…</option>
+            <option>Up to AED 16,000 (Category A: AED 5/month + VAT)</option>
+            <option>Above AED 16,000 (Category B: AED 10/month + VAT)</option>
+          </select>
+        </label>
+        <label class="consent full"><input type="checkbox" name="consent" required> I agree to share these details with Georges Akkaoui (fäm Properties) to register my ILOE subscription.</label>
+      </div>
+      <p class="iloe-error" role="alert" hidden>Please complete all fields correctly.</p>
+      <button type="submit" class="btn btn-gold">Send my details</button>
+      <p class="ju-mail">Sending opens your email app with your details filled in. Or email me at <a href="mailto:georges.a@famproperties.com?subject=ILOE%20subscription%20request">georges.a@famproperties.com</a></p>
+    </form>
+</main>
+<footer>© 2026 Georges Akkaoui · fäm Properties, Dubai, UAE</footer>
+<script>
+(function(){
+  var f=document.getElementById('iloe-form'); if(!f) return;
+  var err=f.querySelector('.iloe-error');
+  function eidOk(v){var d=v.replace(/[\s-]/g,''); return /^784\d{12}$/.test(d)||/^\d{6,12}$/.test(d);}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    f.querySelectorAll('input,select').forEach(function(el){
+      var bad=!el.checkValidity()||(el.name==='eid'&&!eidOk(el.value));
+      el.classList.toggle('invalid',bad); if(bad) ok=false;
+    });
+    err.hidden=ok; if(!ok) return;
+    var v=function(n){return f.elements[n].value.trim();};
+    var body=['Hi Georges,','','I would like to subscribe to ILOE unemployment insurance.','',
+      'Full name: '+v('name'),
+      'Emirates ID / UID: '+v('eid'),
+      'Date of birth: '+v('dob'),
+      'Mobile (linked to Emirates ID): '+v('mobile'),
+      'Sector: '+v('sector'),
+      'Salary category: '+v('category'),
+      '','Thank you'].join('\n');
+    location.href='mailto:georges.a@famproperties.com?subject='+encodeURIComponent('ILOE subscription request - '+v('name'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
